@@ -99,6 +99,6 @@ def upload_predict():
 
 if __name__ == "__main__":
     MODEL = SEResNext50_32x4d(pretrained=None)
-    MODEL.load_state_dict(torch.load("app/model.bin", map_location=torch.device(DEVICE)))
+    MODEL.load_state_dict(torch.load("https://www.kaggleusercontent.com/kf/35193166/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..DD9AVBK19GTqccKC8PRgqg.a7_6epDl8MYzxdFro0I057WbRdQjxpQkbMeAt94cu7oy8VRsMJVhdx6Wa_uNMNJpMEsopdo_dBLd7Oc0qh3Vsizv_hMHhdmVyMAASw4JKlcifJqbdMLGsOOXivoiIlpi_vzQue1B-P8aNLQK8JxYH3mdT48pCPjtf7YWXU1u3oOWq0J1bRDIthI4oyDGxCYhvUJiEJ2WBUkoY0KsiyYl220UkgLvXqCeqGeptUhPdX-3xH1JrFjFpmjrfKCqEn4cJyBzy-hakVENx-BcXeoDkM1tQBcowZd5mVH3mM47je3grn-kV1XV7vQDApcnxRFDhPSVTxzjV3FYZas2VHO6799vGknGtRwnYUTkC4Zu8rwmE4Lum2SYto70ly96GcPGhrU_M5svI_t3ciADN4Qt4uqahv2bz_P5XYzzfPOIY53hgQJwX4dXOVS1SG6LcEg70j58vszBJcmUR4QCBoIb14yxdhvozjZgg52x6pyXkQfruSHN9c6qGQsyc4GhwuI8nDpjzsxWly9xVH07cICMy6z0cXMKNXwFXCoNHoNM3bkEPLNHrL-8iEMqznqEmwhWWHxbN3yTSQTYL2xApHNGgAARUzHGJPDejAi_lV12GLmRFNUD0N0T2T6QuSDYoCj-jkGROYWxAK6CXPbXwj3GWQ.ez47-nxB369WDPuRNn2tJA/model_fold_4.bin", map_location=torch.device(DEVICE)))
     MODEL.to(DEVICE)
     app.run(host="0.0.0.0", port=12000, debug=True)
