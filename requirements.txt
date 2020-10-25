@@ -1,0 +1,6 @@
+wtfml==0.0.2
+albumentations
+flask
+pretrainedmodels
+torch==1.6.0+cpu
+torchvision==0.7.0+cpu
